@@ -1,0 +1,16 @@
+{
+    "navbar1":"About me",
+    "navbar2":"My projects",
+    "navbar3":"Contact me",
+    "name":"Mihail Divulin",
+    "hello":"Hello",
+    "descr1":"My name is Mihail.",
+    "descr2":"I am a Web Developer from Ukraine.",
+    "descr3":"Mainly i build websites from scratch using Vue/Nuxt frameworks",
+    "descr4":"but also i have other skills",
+    "portfolio":"Portfolio",
+    "project1":"Devchallenges.io challenge to create a simple social media app as a showcase of both front-end and back-end skills, user has an ability to register, edit profile, \"tweet\", follow, like, retweet etc.",
+    "project2":"Fan-made website for community of a custom map on Warcraft III. A good showcase of ability to design from scratch and collect all the necessary data for it.",
+    "moretogether": "Let's create more together!",
+    "contactme":"Contact me"
+}
