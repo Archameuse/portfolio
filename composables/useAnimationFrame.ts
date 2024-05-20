@@ -19,28 +19,5 @@ export default (nextAnimationFrameHandler:Function, interval?:number) => {
     onBeforeUnmount(() => {
         cancelAnimationFrame(frame.value)
     })
-    // const frame = ref<number>(0)
-    // const shouldAnimate = true
-    // const animate = () => {
-    //     nextAnimationFrameHandler()
-    //     frame.value = requestAnimationFrame(animate)
-    // };
-    // onMounted(() => {
-    //     if (shouldAnimate) {
-    //         frame.value = requestAnimationFrame(animate)
-    //     } else {
-    //         cancelAnimationFrame(frame.value)
-    //     }
-    //     return () => cancelAnimationFrame(frame.value);
-    // })
 
-    // onMounted(() => {
-    //     if (shouldAnimate) {
-    //         frame.value = requestAnimationFrame(animate)
-    //     } else {
-    //         cancelAnimationFrame(frame.value)
-    //     }
-
-    //     return () => cancelAnimationFrame(frame.value);
-    // }, [INSTANCES]);
 }
