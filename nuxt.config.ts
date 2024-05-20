@@ -11,5 +11,13 @@ export default defineNuxtConfig({
     families: {
       "Kelly Slab": true
     }
+   },
+   app: {
+    head: {
+      link: [
+        {rel: 'icon', type: 'image/png', href: 'public/favicon.png'},
+        {rel: 'icon', type: 'image/svg+xml', href: 'public/favicon.svg'}
+      ]
+    }
    }
 })
