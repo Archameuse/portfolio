@@ -2,7 +2,7 @@
     <div class="w-full h-80 absolute bottom-0 left-0 bg-slate-700 flex flex-col items-center justify-start gap-4 text-white font-['Kelly_Slab'] pt-8 text-center">
         <h1 class="text-4xl">{{$t('contactme')}}</h1>
         <div class="flex flex-wrap items-center justify-center gap-4 [&>a]:aspect-square [&>a]:rounded-full [&>a]:w-12 [&>a]:border [&>a]:border-white [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:p-2 [&>a]:cursor-pointer">
-            <!-- <a href="https://www.linkedin.com/in/mihail-divulin">
+            <!-- <a>
                 <IconLinkedin class="w-full h-full"/>
             </a> -->
             <a href="https://github.com/Archameuse">
