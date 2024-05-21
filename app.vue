@@ -1,6 +1,6 @@
 <template>
   <main class="h-[400rem] w-full relative select-none">
-    <section class="transition-all ease-out overflow-hidden w-full h-screen sticky top-0 left-0 flex flex-col items-center font-['Kelly_Slab'] text-white">
+    <section class="transition-all ease-out overflow-hidden w-full h-[100dvh] h-[100vh] sticky top-0 left-0 flex flex-col items-center font-['Kelly_Slab'] text-white">
       <img :style="`object-position: 0 -${bgScroll}px;background-position-y: -${bgScroll}px;`" src="public/image.png" class="absolute top-0 left-0 -z-10 w-full h-full min-w-[140rem] pointer-events-none object-cover">
       <MainHeader />
       <div class="w-full h-full flex flex-col justify-end smH:justify-center items-center">
