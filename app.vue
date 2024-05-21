@@ -19,7 +19,7 @@
           <div class="aboutme absolute left-0 top-0 w-full h-full flex flex-col item-center justify-center gap-8 opacity-0">
             <div class="absolute top-0 left-0 bg-[url('public/aboutmebg2.jpg')] bg-center bg-cover bg-no-repeat w-full h-full brightness-75 blur-sm"></div>
               <div class="absolute z-20 pointer-events-none left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] aspect-square pause">
-                <div class="w-full h-full border-2 border-opacity-20 smH:border-opacity-90 border-dashed border-white rounded-full overflow-hidden animate-rotate"></div>
+                <div class="w-full h-full border-2 border-opacity-20 smH:border-opacity-90 border-dashed border-white rounded-full overflow-hidden"></div>
                 <div @mouseleave="descrleave" ref="skills" class="absolute rounded-full top-0 left-0 w-full h-full bg-black text-center transition-opacity duration-300" style="pointer-events: none; opacity: 0;">
                     <Skills />
                 </div>
@@ -67,7 +67,7 @@ useHead({
 })
 
 
-  const SCROLL_END = 4500
+  const SCROLL_END = 450
   const asteroidsGen = ref<number>(0)
   const asteroidsScore = ref<number>(0)
   const bgScroll = ref<number>(0)
@@ -77,7 +77,7 @@ useHead({
   const scrollContacts = () => {window.scrollTo(0,99999)}
   const scroll = (e:Event) => {
     bgScroll.value = Math.floor(window.scrollY/4)
-    document.documentElement.style.setProperty('--scroll', String(Math.min(window.scrollY/SCROLL_END,1)))
+    document.documentElement.style.setProperty('--scroll', String(Math.min(window.scrollY/SCROLL_END,10)))
   }
 
   const descrhover = () => {
@@ -121,31 +121,31 @@ body::after{
 }
 
 .wrapper {
-  animation: main 1s linear calc(var(--scroll)*-1s) 1 both paused;
+  animation: main 10s linear calc(var(--scroll)*-1s) 1 both paused;
 }
 
 .circle {
-  animation: circle 1s linear calc(var(--scroll)*-1s) 1 both paused;
+  animation: circle 10s linear calc(var(--scroll)*-1s) 1 both paused;
 }
 .asteroidstext {
-  animation: asteroids 1s linear calc(var(--scroll)*-1s) 1 both paused;
+  animation: asteroids 10s linear calc(var(--scroll)*-1s) 1 both paused;
 }
 .landing {
-  animation: landing 1s linear calc(var(--scroll)*-1s) 1 both paused;
+  animation: landing 10s linear calc(var(--scroll)*-1s) 1 both paused;
 }
 .aboutme {
-  animation: aboutme 1s linear calc(var(--scroll)*-1s) 1 both paused;
+  animation: aboutme 10s linear calc(var(--scroll)*-1s) 1 both paused;
 }
 .projects {
-  animation: projects 1s linear calc(var(--scroll)*-1s) 1 both paused;
+  animation: projects 10s linear calc(var(--scroll)*-1s) 1 both paused;
 }
 .project {
-  animation: project 1s linear calc(var(--scroll)*-1s) 1 both paused;
+  animation: project 10s linear calc(var(--scroll)*-1s) 1 both paused;
 }
 
 #descr:before {
   content: 'Full Stack Web Dev';
-  animation: type 3s linear 1s;
+  animation: type 3s linear 10s;
   animation-fill-mode: forwards;
 }
 .pause:hover div {
@@ -154,7 +154,7 @@ body::after{
 .moretogether  {
   --text: 'bg-green-200';
   text-shadow: 0 0 3px black;
-  animation: type2 10s linear 1s infinite;
+  animation: type2 10s linear 10s infinite;
   animation-fill-mode: forwards;
   background-color: rgb(187 247 208 / 0.8);
 }
