@@ -14,7 +14,7 @@
               Generation: {{ asteroidsGen }} <br/>
               Highscore: {{ asteroidsScore }}
             </span>
-            <Asteroids :fps="80" ai :instances="5" :timetolive="5"  @genupdate="(val) => asteroidsGen=val" @scoreupdate="(val) => asteroidsScore=val"/>
+            <Asteroids :fps="80" ai :instances="3" :timetolive="5"  @genupdate="(val) => asteroidsGen=val" @scoreupdate="(val) => asteroidsScore=val"/>
           </div>
           <div class="aboutme absolute left-0 top-0 w-full h-full flex flex-col item-center justify-center gap-8 opacity-0">
             <div class="absolute top-0 left-0 bg-[url('public/aboutmebg2.jpg')] bg-center bg-cover bg-no-repeat w-full h-full brightness-75 blur-sm"></div>
